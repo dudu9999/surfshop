@@ -1,0 +1,7 @@
+{
+  "name": "surfshop",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
