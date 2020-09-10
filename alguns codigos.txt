@@ -27,3 +27,5 @@ ionic generate interface interfaces/user
 ionic generate guard guards/auth
 ionic generate guard guards/login
 ionic generate page pages/details
+ionic generate interface interfaces/product
+ionic generate service services/product
