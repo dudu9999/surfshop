@@ -1,3 +1,6 @@
+cd ../../programacao/ionic/surfshop
+ionic serve
+
 criar app com codigo
 ionic start surfshop blank
 
@@ -17,11 +20,10 @@ e apagar a linha que nao consta /pages/ e sim direto ao home.
 
 ionic cordova plugin add cordova-plugin-ionic-keyboard
 
-
 npm install -g @angular/cli
 ng add @angular/fire
 
-
-cd ../../programacao/ionic/surfshop
-
 ionic generate interface interfaces/user
+ionic generate guard guards/auth
+ionic generate guard guards/login
+ionic generate page pages/details
