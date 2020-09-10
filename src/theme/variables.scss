@@ -5,6 +5,8 @@
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
+  --ion-color-primary2: #3d9ddd;
+  --ion-color-primary3: #0072bc;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -228,5 +230,7 @@
     --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
+
+
   }
 }

@@ -1,0 +1,27 @@
+criar app com codigo
+ionic start surfshop blank
+
+depois apagar pasta home
+
+depois gerar pasta pages
+com home dentro
+
+ionic generate page pages/home
+e login
+ionic generate page pages/login
+
+alterar para iniciar pela pagina login no arquivo
+src\app\app-routing.module.ts
+
+e apagar a linha que nao consta /pages/ e sim direto ao home.
+
+ionic cordova plugin add cordova-plugin-ionic-keyboard
+
+
+npm install -g @angular/cli
+ng add @angular/fire
+
+
+cd ../../programacao/ionic/surfshop
+
+ionic generate interface interfaces/user

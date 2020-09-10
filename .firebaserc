@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "surfshop-b80bf": {
+      "hosting": {
+        "app": [
+          "surfshop-b80bf"
+        ]
+      }
+    }
+  }
+}
