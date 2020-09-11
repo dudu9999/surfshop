@@ -55,6 +55,10 @@ export class LoginPage implements OnInit {
             message = "Digite a senha!"
           break;
         
+        case "auth/weak-password":
+            message = "A senha deve ter 6 digitos ou mais!"
+          break;
+        
         default:
             message = "Erro desconhecido!"
             console.error(error);

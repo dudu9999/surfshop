@@ -6,6 +6,13 @@
           "surfshop-b80bf"
         ]
       }
+    },
+    "surfshop-349be": {
+      "hosting": {
+        "app": [
+          "surfshop-349be"
+        ]
+      }
     }
   }
 }
