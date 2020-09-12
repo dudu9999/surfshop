@@ -31,4 +31,8 @@ npm-debug.log*
 /www
 environment.prod.ts
 environment.ts
+<<<<<<< HEAD
 /src/environments/
+=======
+/src/environments/
+>>>>>>> 56d314e4f2293b56f95b30fd472b62153f3bcd42
