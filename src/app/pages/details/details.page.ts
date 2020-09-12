@@ -43,7 +43,7 @@ export class DetailsPage implements OnInit {
   }
 
   async saveProduct() {
-    this.product.userId = this.authService.getAuth().currentUser.uid;
+    this.product.userId = (await this.authService.getAuth().currentUser).uid;
     
     await this.presentLoading();
 
@@ -51,10 +51,11 @@ export class DetailsPage implements OnInit {
       try {
         await this.productService.updateProduct(this.productId, this.product);
         await this.loading.dismiss();
+        console.log("Produto Cadastrado");
 
         this.navCtrl.navigateBack('/home');
       } catch (error) {
-        this.presentToast('Erro ao tentar salvar');
+        this.presentToast('#E1 - Erro ao tentar salvar');
         this.loading.dismiss();
       }
     } else {
@@ -66,7 +67,8 @@ export class DetailsPage implements OnInit {
 
         this.navCtrl.navigateBack('/home');
       } catch (error) {
-        this.presentToast('Erro ao tentar salvar');
+        console.error(error);
+        this.presentToast('#E2 - Erro ao tentar salvar');
         this.loading.dismiss();
       }
     }
