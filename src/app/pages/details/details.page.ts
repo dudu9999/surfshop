@@ -43,9 +43,9 @@ export class DetailsPage implements OnInit {
   }
 
   async saveProduct() {
-    await this.presentLoading();
-
     this.product.userId = this.authService.getAuth().currentUser.uid;
+    
+    await this.presentLoading();
 
     if (this.productId) {
       try {
@@ -66,7 +66,6 @@ export class DetailsPage implements OnInit {
 
         this.navCtrl.navigateBack('/home');
       } catch (error) {
-        console.log(error);
         this.presentToast('Erro ao tentar salvar');
         this.loading.dismiss();
       }

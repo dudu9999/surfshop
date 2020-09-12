@@ -20,11 +20,14 @@ export class HomePage implements OnInit {
     private loadingCtrl: LoadingController,
     private productService: ProductService,
     private toastCtrl: ToastController
-  ) { }
-
-  ngOnInit() {
+  ) {
+    this.productsSubscription = this.productService.getProducts().subscribe(data => {
+      this.products = data;
+    });
   }
-  
+
+  ngOnInit() { }
+
   ngOnDestroy() {
     this.productsSubscription.unsubscribe();
   }
