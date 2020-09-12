@@ -29,3 +29,14 @@ ionic generate guard guards/login
 ionic generate page pages/details
 ionic generate interface interfaces/product
 ionic generate service services/product
+
+
+-------------------------------------
+
+criando apk
+
+ionic cordova plataform add android
+
+configure o arquivo config.xml
+
+ionic cordova build android
